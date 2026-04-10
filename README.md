@@ -15,10 +15,10 @@
 
 Este proyecto consiste en el desarrollo de una aplicación web en **HTML puro**, cuyo objetivo principal es practicar:
 
-✔ Uso de versiones con **Git**
-✔ Trabajo colaborativo con **ramas**
-✔ Resolución de **conflictos**
-✔ Automatización con **GitHub Actions**
+- ✔ Uso de versiones con **Git**
+- ✔ Trabajo colaborativo con **ramas**
+- ✔ Resolución de **conflictos**
+- ✔ Automatización con **GitHub Actions**
 
 ⚠️ El foco NO está en el diseño, sino en el uso correcto de herramientas de control de versiones.
 
