@@ -6,68 +6,65 @@
     <title>Inicio</title>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Bienvenido</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <br>
-    <p><strong>Esta es la página de inicio. Somos una empresa de desarrollo de software, ofreciendo soluciones digitales para sus necesidades.</strong></p>
-    <br>
+  <br>
+  <p><strong>Esta es la página de inicio. Somos una empresa de desarrollo de software, ofreciendo soluciones digitales para sus necesidades.</strong></p>
+  <br>
 
-    <p>Nuestros servicios incluyen:</p>
-    <ul> 
-        <li>Soporte</li>
-        <li>Gestión</li>
-        <li>Investigación</li>
-        <li>Desarrollo</li>
-        <li>Consultoría</li>
-        <li>Auditoría</li>
-    </ul>
+  <p>Nuestros servicios incluyen:</p>
+  <ul>
+    <li>Soporte</li>
+    <li>Gestión</li>
+    <li>Investigación</li>
+    <li>Desarrollo</li>
+    <li>Consultoría</li>
+    <li>Auditoría</li>
+  </ul>
 
+  <form action="#" method="post">
+    <h2>Solicitud de servicio</h2>
+    <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
+    </div><br>
 
-    <form action="" method="post">
-  <h2>Solicitud de servicio</h2>
+    <div>
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Pérez" required>
+    </div><br>
+    
+    <div>
+      <label for="dni">DNI</label>
+      <input type="text" id="dni" name="dni" placeholder="12.345.678" inputmode="numeric" pattern="\d{7,8}" required>
+    </div><br>
+    
+    <div>
+      <label for="servicio">Servicio</label>
+      <select id="servicio" name="servicio" required>
+        <option value="" disabled selected>Seleccioná un servicio</option>
+        <option value="soporte">Soporte</option>
+        <option value="gestion">Gestión</option>
+        <option value="investigacion">Investigación</option>
+        <option value="desarrollo">Desarrollo</option>
+        <option value="consultoria">Consultoría</option>
+        <option value="auditoria">Auditoría</option>
+      </select>
+    </div><br>
 
-  <div>
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Juan" required />
-  </div> <br>
-
-  <div>
-    <label for="apellido">Apellido</label>
-    <input type="text" id="apellido" name="apellido" placeholder="Pérez" required />
-  </div> <br>
-
-  <div>
-    <label for="dni">DNI</label>
-    <input type="text" id="dni" name="dni" placeholder="12.345.678"
-           inputmode="numeric" pattern="\d{7,8}" required />
-  </div> <br>
-
-  <div>
-    <label for="servicio">Servicio</label>
-    <select id="servicio" name="servicio" required>
-      <option value="" disabled selected>Seleccioná un servicio</option>
-      <option value="soporte">Soporte</option>
-      <option value="gestion">Gestión</option>
-      <option value="investigacion">Investigación</option>
-      <option value="desarrollo">Desarrollo</option>
-      <option value="consultoria">Consultoría</option>
-      <option value="auditoria">Auditoría</option>
-    </select>
-  </div> <br>
-
-  <button type="submit">Enviar solicitud</button>
-</form>
-
-    <footer>
-        <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
-    </footer>
+    <button type="submit">Enviar solicitud</button>
+  </form>
+  
+  <footer>
+    <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
