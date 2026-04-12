@@ -1,0 +1,22 @@
+name: Validación HTML
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/**'
+
+jobs:
+  validar-html:
+    name: Verificar archivos HTML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar validador HTML
+        run: npm install -g html-validate
+
+      - name: Validar archivos HTML
+        run: html-validate "**/*.html"
