@@ -126,6 +126,7 @@ Se utilizaron tags para marcar versiones del proyecto:
 - `v1.0.0` → Primera versión funcional
 ![`v1.0.0` → Primera versión funcional](imagenes/tagv1.0.0.jpeg)
 - `v1.1.0` → Versión final
+![`v1.1.0` → Versión final](imagenes/tagv1.1.0.png)
 
 📌 Permite acceder a distintas versiones del proyecto en GitHub.
 
