@@ -25,19 +25,9 @@ Este proyecto consiste en el desarrollo de una aplicación web en **HTML puro**,
 ---
 
 ## 🧱 Estructura del Proyecto
-´´´
-trabajoRamas/
-│
-├── .github/
-│ └── workflows/
-│ └── validar-html.yml → Workflow de validación
-│
-├── imagenes/ → 📸 Capturas del TP
-├── index.html → 🏠 Página de inicio
-├── contacto.html → 📩 Página de contacto
-├── about.html → ℹ️ Información del grupo
-└── README.md
-´´´
+
+![Estructura del proyecto](imagenes/estructura.png)
+
 ---
 
 ## 🌿 Ramas del Proyecto
@@ -77,13 +67,14 @@ Se generó un conflicto de forma intencional modificando las **mismas líneas de
 - Se realizó commit de resolución
 
 📸 Se incluyen capturas del conflicto y su resolución.
-- Captura 1 - Intento de merge a main
+- Captura 1 - Intento de merge a main.
 ![Captura 1 - Intento de merge a main](imagenes/conflictomerge.jpeg)
-- Captura 2 - Se modificaron las mismas líneas
+- Captura 2 - Se modificaron las mismas líneas.
 ![Captura 2 - Se modificaron las mismas líneas](imagenes/conflicto.jpeg)
-- Captura 3 - Se mantuvieron ambos cambios
+- Captura 3 - Se mantuvieron ambos cambios.
+
 ![Captura 3 - Se mantuvieron ambos cambios](imagenes/solucion.jpeg)
-- Captura 4 - Merge final sin errores
+- Captura 4 - Merge final sin errores.
 ![Captura 4 - Merge final sin errores](imagenes/mergevalido.jpeg)
 
 ---
@@ -93,7 +84,7 @@ Se generó un conflicto de forma intencional modificando las **mismas líneas de
 ### Primera Versión Funcional
 
 Se implementó un workflow que se ejecuta automáticamente en cada `push`.
-- Archivo .yml básico para validación de HTML
+- Archivo .yml básico para validación de HTML.
 ![Archivo .yml básico para validación de HTML](imagenes/yml1.jpeg)
 
 #### 📊 Resultados Esperados:
@@ -102,7 +93,7 @@ Se implementó un workflow que se ejecuta automáticamente en cada `push`.
 
 #### Workflow en Ejecución: 
 
-- Intento 1: Se ejecuta el primer workflow en la pestaña de Actions, y da error (no se valida el archivo HTML)
+- Intento 1: Se ejecuta el primer workflow en la pestaña de Actions, y da error (no se valida el archivo HTML).
 ![Resultado del primer intento](imagenes/action1.jpeg)
 
 - Intento 2: Como consecuencia, se analizan los errores señalados y se corrigen algunos. Se pushean cambios nuevamente, y el workflow en ejecución vuelve a dar error.
@@ -122,7 +113,8 @@ Se agrega un job extra al archivo .yml de validación automática, con el fin de
 - ✔ Verificación de archivos HTML  
 - ✔ Validación de estructura (etiquetas, cierre, sintaxis)  
 - ✔ Comprobación de existencia de archivos obligatorios  
-- ✔ Ejecución automática en ramas `main` y `feature/*`- ✔ Verificación de archivos HTML  
+- ✔ Ejecución automática en ramas `main` y `feature/*`
+- ✔ Verificación de archivos HTML  
 - ✔ Validación de estructura (etiquetas, cierre, sintaxis)  
 - ✔ Comprobación de existencia de archivos obligatorios  
 - ✔ Ejecución automática en ramas `main` y `feature/*`
