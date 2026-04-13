@@ -25,18 +25,19 @@ Este proyecto consiste en el desarrollo de una aplicación web en **HTML puro**,
 ---
 
 ## 🧱 Estructura del Proyecto
-
+´´´
 trabajoRamas/
 │
 ├── .github/
 │ └── workflows/
 │ └── validar-html.yml → Workflow de validación
 │
+├── imagenes/ → 📸 Capturas del TP
 ├── index.html → 🏠 Página de inicio
 ├── contacto.html → 📩 Página de contacto
 ├── about.html → ℹ️ Información del grupo
 └── README.md
-
+´´´
 ---
 
 ## 🌿 Ramas del Proyecto
@@ -89,6 +90,42 @@ Se generó un conflicto de forma intencional modificando las **mismas líneas de
 
 ## 🤖 GitHub Actions (Validación Automática)
 
+### Primera Versión Funcional
+
+Se implementó un workflow que se ejecuta automáticamente en cada `push`.
+- Archivo .yml básico para validación de HTML
+![Archivo .yml básico para validación de HTML](imagenes/yml1.jpeg)
+
+#### 📊 Resultados Esperados:
+- ✔ HTML válido → Workflow exitoso  
+- ❌ HTML inválido → Workflow falla
+
+#### Workflow en Ejecución: 
+
+- Intento 1: Se ejecuta el primer workflow en la pestaña de Actions, y da error (no se valida el archivo HTML)
+![Resultado del primer intento](imagenes/action1.jpeg)
+
+- Intento 2: Como consecuencia, se analizan los errores señalados y se corrigen algunos. Se pushean cambios nuevamente, y el workflow en ejecución vuelve a dar error.
+![Resultado del segundo intento](imagenes/action2.jpeg)
+
+- Intento Final: Los errores pendientes son corregidos, logrando así que la validación sea llevada a cabo con éxito.
+![Resultado del último intento](imagenes/action3.jpeg)
+
+### Versión Final
+
+Se agrega un job extra al archivo .yml de validación automática, con el fin de ampliar las funcionalidades. Se pasa de tener sólo el job `validar-html` a tener también el job `validar-archivos`.
+
+- Archivo .yml ampliado para validación de HTML
+![Archivo .yml ampliado para validación de HTML](imagenes/yml2.jpeg)
+
+### 🔎 Funcionalidades:
+- ✔ Verificación de archivos HTML  
+- ✔ Validación de estructura (etiquetas, cierre, sintaxis)  
+- ✔ Comprobación de existencia de archivos obligatorios  
+- ✔ Ejecución automática en ramas `main` y `feature/*`- ✔ Verificación de archivos HTML  
+- ✔ Validación de estructura (etiquetas, cierre, sintaxis)  
+- ✔ Comprobación de existencia de archivos obligatorios  
+- ✔ Ejecución automática en ramas `main` y `feature/*`
 ---
 
 ## 🏷️ Versionado con Tags
